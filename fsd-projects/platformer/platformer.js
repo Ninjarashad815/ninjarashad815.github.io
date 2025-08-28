@@ -27,7 +27,7 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    //toggleGrid();
 
 
     // TODO 2 - Create Platforms
@@ -36,15 +36,34 @@ createPlatform(250,620 ,40 ,12 , "black");
 createPlatform(400,500,65 ,7 , "black");
 createPlatform(295,400 ,65 ,7 , "black");
 createPlatform(400,295 ,300,8 , "color");
-createPlatform(403,200 ,448 ,8 , "white");
-createPlatform(700,350 ,45 ,7 , "black");
+createPlatform(403,200 ,448 ,8 , "black");
+createPlatform(700,350 ,52 ,7 , "black");
 createPlatform(750,300 ,45 ,7 , "color");
 createPlatform(465,300 ,8 ,450 , "black");
 createPlatform(795,300 ,8 ,80 , "black");
 createPlatform(850,200 ,4 ,375 , "black");
 createPlatform(550,575 ,550 ,7 , "black");
 createPlatform(469,475 ,332 ,6 , "black");
-createPlatform(500 , 750 ,332 ,6 , "black");
+createPlatform(475 , 675 ,332 ,6 , "black");
+createPlatform(900 , 675 ,300 ,6 , "black");
+createPlatform(1250 , 600 ,70 ,6 , "black");
+createPlatform(850 , 500 ,70 ,6 , "black");
+createPlatform(1100 , 400 ,70 ,6 , "black");
+createPlatform(900 , 300 ,70 ,6 , "black");
+createPlatform(1050 , 200 ,70 ,6 , "black");
+createPlatform(1300 , 300 ,70 ,6 , "black");
+createPlatform(1100 , 400 ,70 ,6 , "black");
+createPlatform(100 ,200  ,200 ,6 , "black");
+createPlatform(300 , 175 ,100 ,6 , "black");
+createPlatform(800 , 675 ,6 ,75 , "black");
+createPlatform(900 , 675 ,6 ,75 , "black");
+createPlatform(700 , 300 ,2 ,50 , "black");
+createPlatform(750 , 300 ,2 ,50 , "black");
+createPlatform(300 , 175 ,6 ,31 , "black");
+createPlatform(400 , 175 ,6 ,31 , "black");
+createPlatform(1100 , 520 ,6 ,60 , "black");
+createPlatform(1320 , 600 ,6 ,143 , "black");
+createPlatform(1200 , 675 ,6 ,143 , "black");
 
 
 
@@ -53,14 +72,19 @@ createPlatform(500 , 750 ,332 ,6 , "black");
 
 
     // TODO 3 - Create Collectables
-
+createCollectable("diamond", 135, 175, 0.5, 0.7);
+createCollectable("steve", 1250, 700, 0.5, 0.7);
+createCollectable("grace", 600, 450, 0.5, 0.7);
+createCollectable("max", 850, 700, 0.5, 0.7);
+createCollectable("kennedi", 1350, 175, 0.5, 0.7);
 
 
     
     // TODO 4 - Create Cannons
 createCannon("top", 200, 1000);
-createCannon("right", 262, 3500);
+createCannon("right", 262, 3700);
 createCannon("right", 658, 3600);
+createCannon("right", 458, 3600);
 
     
     
