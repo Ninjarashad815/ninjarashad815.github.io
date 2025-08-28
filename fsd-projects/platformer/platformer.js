@@ -18,7 +18,7 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "Navy"); // bottom wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "black"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
@@ -31,39 +31,51 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-createPlatform(150,700 ,65 ,12 , "black");
-createPlatform(250,620 ,40 ,12 , "black");
-createPlatform(400,500,65 ,7 , "black");
-createPlatform(295,400 ,65 ,7 , "black");
-createPlatform(400,295 ,300,8 , "color");
-createPlatform(403,200 ,448 ,8 , "black");
-createPlatform(700,350 ,52 ,7 , "black");
-createPlatform(750,300 ,45 ,7 , "color");
-createPlatform(465,300 ,8 ,450 , "black");
-createPlatform(795,300 ,8 ,80 , "black");
-createPlatform(850,200 ,4 ,375 , "black");
-createPlatform(550,575 ,550 ,7 , "black");
-createPlatform(469,475 ,332 ,6 , "black");
-createPlatform(475 , 675 ,332 ,6 , "black");
-createPlatform(900 , 675 ,300 ,6 , "black");
-createPlatform(1250 , 600 ,70 ,6 , "black");
-createPlatform(850 , 500 ,70 ,6 , "black");
-createPlatform(1100 , 400 ,70 ,6 , "black");
-createPlatform(900 , 300 ,70 ,6 , "black");
-createPlatform(1050 , 200 ,70 ,6 , "black");
-createPlatform(1300 , 300 ,70 ,6 , "black");
-createPlatform(1100 , 400 ,70 ,6 , "black");
-createPlatform(100 ,200  ,200 ,6 , "black");
-createPlatform(300 , 175 ,100 ,6 , "black");
-createPlatform(800 , 675 ,6 ,75 , "black");
-createPlatform(900 , 675 ,6 ,75 , "black");
-createPlatform(700 , 300 ,2 ,50 , "black");
-createPlatform(750 , 300 ,2 ,50 , "black");
-createPlatform(300 , 175 ,6 ,31 , "black");
-createPlatform(400 , 175 ,6 ,31 , "black");
-createPlatform(1100 , 520 ,6 ,60 , "black");
-createPlatform(1320 , 600 ,6 ,143 , "black");
-createPlatform(1200 , 675 ,6 ,143 , "black");
+createPlatform(150,700 ,65 ,12 , "white");
+createPlatform(250,620 ,40 ,12 , "white");
+createPlatform(400,500,65 ,7 , "white");
+createPlatform(295,400 ,65 ,7 , "white");
+createPlatform(400,295 ,300,8 , "white");
+createPlatform(403,200 ,448 ,8 , "white");
+createPlatform(700,350 ,52 ,7 , "white");
+createPlatform(750,300 ,45 ,7 , "white");
+createPlatform(465,300 ,8 ,450 , "white");
+createPlatform(795,300 ,8 ,80 , "white");
+createPlatform(850,200 ,4 ,375 , "white");
+createPlatform(550,575 ,550 ,7 , "white");
+createPlatform(469,475 ,332 ,6 , "white");
+createPlatform(475 , 675 ,332 ,6 , "white");
+createPlatform(900 , 675 ,300 ,6 , "white");
+createPlatform(1250 , 600 ,70 ,6 , "white");
+createPlatform(850 , 500 ,70 ,6 , "white");
+createPlatform(1100 , 400 ,70 ,6 , "white");
+createPlatform(900 , 300 ,70 ,6 , "white");
+createPlatform(1050 , 200 ,70 ,6 , "white");
+createPlatform(1300 , 300 ,70 ,6 , "white");
+createPlatform(1100 , 400 ,70 ,6 , "white");
+createPlatform(100 ,200  ,200 ,6 , "white");
+createPlatform(300 , 175 ,100 ,6 , "white");
+createPlatform(800 , 675 ,6 ,75 , "white");
+createPlatform(900 , 675 ,6 ,75 , "white");
+createPlatform(700 , 300 ,2 ,50 , "white");
+createPlatform(750 , 300 ,2 ,50 , "white");
+createPlatform(300 , 175 ,6 ,31 , "white");
+createPlatform(400 , 175 ,6 ,31 , "white");
+createPlatform(1100 , 520 ,6 ,60 , "white");
+createPlatform(1320 , 600 ,6 ,143 , "white");
+createPlatform(1200 , 675 ,6 ,143 , "white");
+createPlatform(0 , 1 ,6 ,800 , "black");
+createPlatform(1 , 0 ,1400 ,6 , "black");
+createPlatform(1394 ,1 ,6 ,800 , "black");
+createPlatform(1 , 1 ,100 ,100 , "yellow");
+createPlatform(70, 100 ,15, 30 , "yellow");
+createPlatform(1, 100 ,15, 30 , "yellow");
+createPlatform(30, 100 ,15, 30 , "yellow");
+createPlatform(100, 1 ,30, 15 , "yellow");
+createPlatform(100, 30 ,30, 15 , "yellow")
+createPlatform(100, 70 ,30, 15 , "yellow")
+createPlatform(1325 , 700 ,70 ,6 , "white");
+
 
 
 
