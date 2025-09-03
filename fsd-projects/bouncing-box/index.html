@@ -55,8 +55,9 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
-          box.css("left", newPositionX);
+       function moveBoxTo(newPositionX,newPositionY) {
+            box.css("left", newPositionX);
+            box.css("top", newPostionY);
         }
 
         // changes the text displayed on the Box
@@ -72,7 +73,9 @@
          var positionX = 0
          var points = 0
          var speed = 10
-        
+         var positionY;
+         var speedY;
+         var boardHeight = jQuery(window).height();
 
 
         /**
@@ -81,7 +84,7 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-          moveBoxTo(positionX); // move box to right edge
+          moveBoxTo(positionX,positionY); // move box to right edge
           positionX = positionX + speed
           if (positionX > boardWidth){
             speed = speed * -1;
@@ -90,6 +93,7 @@
             speed = speed * -1;
 
           }
+          
       
       
       
