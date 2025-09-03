@@ -74,7 +74,7 @@ createPlatform(30, 100 ,15, 30 , "yellow");
 createPlatform(100, 1 ,30, 15 , "yellow");
 createPlatform(100, 30 ,30, 15 , "yellow")
 createPlatform(100, 70 ,30, 15 , "yellow")
-createPlatform(1325,700 ,75, 6 , "white")
+createPlatform(1325,700 ,68, 6 , "white")
 
 
 
