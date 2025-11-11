@@ -9,28 +9,35 @@ var makeLevelData = function (window) {
     // behavior of our game
 
     // TODO 12: change the below data
-    var levelData = [
-      {
-        name: "Robot Romp",
-        number: 1,
-        speed: -3,
-        gameItems: [
-          { type: "sawblade", x: 400, y: groundY },
-          { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
-        ],
-      },
-      {
-        name: "Robot Rampage",
-        number: 2,
-        speed: -3,
-        gameItems: [
-          { type: "sawblade", x: 400, y: groundY },
-          { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
-        ],
-      },
-    ];
+   var levelData = [
+  {
+    name: "Robot Romp",
+    number: 1,
+    speed: -3,
+    gameItems: [
+      { type: "sawblade", x: 400, y: groundY },
+      { type: "sawblade", x: 600, y: groundY },
+      { type: "sawblade", x: 900, y: groundY },
+      { type: "enemy", x: 1200, y: groundY - 50 },
+      { type: "reward", x: 1600, y: groundY - 60 },
+      { type: "marker", x: 2000, y: groundY - 50 }
+    ]
+  },
+  {
+    name: "Robot Rampage",
+    number: 2,
+    speed: -3,
+    gameItems: [
+      { type: "sawblade", x: 300, y: groundY },
+      { type: "sawblade", x: 500, y: groundY },
+      { type: "sawblade", x: 800, y: groundY },
+      { type: "enemy", x: 1000, y: groundY - 40 },
+      { type: "reward", x: 1400, y: groundY - 70 },
+      { type: "marker", x: 1800, y: groundY - 50 }
+    ]
+  }
+];
+
     window.opspark.levelData = levelData;
   };
 };
