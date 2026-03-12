@@ -114,6 +114,8 @@ function checkForNewDirection(event) {
  // FILL IN THE REST
 
 
+ 
+
   //console.log(snake.head.direction);     // uncomment me!
 }
 
@@ -239,7 +241,7 @@ function hasCollidedWithSnake() {
       segment.column === snake.head.column
     ) {
       return true;
-    }
+    } 
   }
 
   return false;
