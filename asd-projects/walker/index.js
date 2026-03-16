@@ -39,7 +39,8 @@ function runProgram(){
 
   Note: You can have multiple event listeners for different types of events.
   */
-  $(document).on('keydown', handleKeyDown);                          
+  $(document).on('keydown', handleKeyDown); 
+  $(document).on('keyup', handleKeyUp);                         
 
   ////////////////////////////////////////////////////////////////////////////////
   ///////////////////////// CORE LOGIC ///////////////////////////////////////////
@@ -50,8 +51,9 @@ function runProgram(){
   by calling this function and executing the code inside.
   */
   function newFrame() {
-    
-
+   repositionGameitem()
+   redrawGameItem()
+   wallColliision(walker, "#walker")
   }
   
   /* 
@@ -75,6 +77,14 @@ function runProgram(){
       console.log("down pressed")
     }
   }
+  function handleKeyUp(event) {
+    if (event.which === KEY.LEFT || event.which === KEY.RIGHT) {
+      walker.speedX = 0
+    }
+    if (event.which === KEY.UP || event.which === KEY.DOWN) {
+      walker.speedY = 0
+    }
+  }
 
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
@@ -86,6 +96,25 @@ function runProgram(){
    function redrawGameItem() {
     $("#walker").css("left", walker.x + "px")
     $("#walker").css("top", walker.y + "px")
+   }
+   function wallColliision (player, selector) {
+    var boardWidth = $("#board").width()
+    var boardHeight = $("#board").height()
+    var playerWidth = $(selector).width()
+    var playerHeight = $(selector).height()
+
+    if (player.x < 0) {
+      player.x -= player.speedX
+    }
+    if (player.x > boardWidth - playerWidth) {
+      player.x -= player.speedX
+    }
+    if (player.y < 0) {
+      player.y -= player.speedY
+    }
+    if (player.y > boardHeight - playerHeight) {
+      player.y -= player.speedY
+    }
    }
   
   function endGame() {
